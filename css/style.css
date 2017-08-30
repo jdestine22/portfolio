@@ -1,0 +1,461 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+.parallax-window{
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+  background: transparent;
+  background-attachment: fixed;
+}
+
+.pic{
+  border: 1px solid white;
+  height: 100px;
+  width: 7%;
+  margin-left: 45%;
+  background: url(JO.JPG) no-repeat;
+  background-size: cover;
+  margin-top: 2%;
+}
+
+.line{
+  border: 1px solid white;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.text {
+  color: white;
+}
+
+.text h1{
+  text-align: center;
+  margin-top: 5%;
+  font-family: fantasy;
+  font-size: 5em;
+  width: 65%;
+  margin-left: 15%;
+}
+
+
+
+.text p{
+  font-family: fantasy;
+  text-align: center;
+  margin-top: 2%;
+}
+
+#aboutMe{
+  background-color: #307731;
+  color: white;
+  width: 9%;
+  border-radius: 10px;
+  margin-left: 45%;
+  padding: 1% 3% 1% 3%;
+  text-decoration: none;
+}
+
+#container1{
+  height: 550px;
+  width: 100%;
+}
+
+.halfline1{
+  border: 1px solid green;
+  margin-top: 7%;
+  width: 45%;
+}
+
+.halfline2{
+  float: right;
+  border: 1px solid green;
+  width: 48%;
+  margin-top: -2.5%;
+}
+
+.title{
+  font-family: Oldtown, fantasy;
+  color: #1B6B1C;
+  height: 50px;
+  width: 5%;
+  margin-left: 46%;
+  margin-top: -3%;
+}
+
+.title h1{
+
+}
+
+.blurbpic{
+  height: 330px;
+  width: 25%;
+  background: url(josh02.jpg) no-repeat;
+  background-size: contain;
+}
+
+.textblurb{
+  height: 350px;
+  width: 60%;
+  margin-top: -27%;
+  margin-left: 20%;
+}
+
+.textblurb p{
+  font-family: cursive;
+  font-size: 1.6em;
+}
+
+#container2{
+  height: 1350px;
+  border: 1px solid;
+  background-color: #B4B8B4;
+}
+
+.halfline3{
+  border: 1px solid green;
+  width: 45%;
+  margin-top: 5%;
+}
+
+.halfline4{
+  float: right;
+  border: 1px solid green;
+  width: 46%;
+  margin-top: -2.5%;
+}
+
+.title2{
+  font-family: Oldtown, fantasy;
+  color: #1B6B1C;
+  height: 50px;
+  width: 7%;
+  margin-left: 46%;
+  margin-top: -3%;
+}
+
+.project1{
+  border: 1px solid green;
+  height: 200px;
+  width: 35%;
+  background: url(foodproject.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project2{
+  border: 1px solid green;
+  height: 200px;
+  width: 35%;
+  float: right;
+  margin-top: 5%;
+  background: url(mazegame.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project3{
+  border: 1px solid green;
+  height: 200px;
+  width: 35%;
+  margin-top: 5%;
+  background: url(facebook.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project4{
+  border: 1px solid green;
+  height: 200px;
+  width: 35%;
+  float: right;
+  background: url(yelp.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project5{
+  border: 1px solid green;
+  height: 200px;
+  width: 35%;
+  margin-top: 5%;
+  background: url(memorygame.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.info1{
+  height: 125px;
+  width: 30%;
+  float: right;
+  margin-top: -15%;
+  margin-right: 30%;
+}
+
+.info1 a{
+  background-color: #307731;
+  color: white;
+  width: 9%;
+  border-radius: 10px;
+  padding: 1% 3% 1% 3%;
+  text-decoration: none;
+}
+
+.info2{
+  height: 125px;
+  width: 30%;
+  margin-top: 7.5%;
+}
+
+.info2 a{
+  background-color: #307731;
+  color: white;
+  width: 9%;
+  border-radius: 10px;
+  padding: 1% 3% 1% 3%;
+  text-decoration: none;
+}
+
+.info3{
+  height: 125px;
+  width: 30%;
+  float: right;
+  margin-top: -15%;
+  margin-right: 30%;
+}
+
+.info3 a{
+  background-color: #307731;
+  color: white;
+  width: 9%;
+  border-radius: 10px;
+  padding: 1% 3% 1% 3%;
+  text-decoration: none;
+}
+
+.info4{
+  height: 125px;
+  width: 30%;
+  margin-top: 7.5%;
+}
+
+.info4 a{
+  background-color: #307731;
+  color: white;
+  width: 9%;
+  border-radius: 10px;
+  padding: 1% 3% 1% 3%;
+  text-decoration: none;
+}
+
+.info5{
+  height: 125px;
+  width: 30%;
+  float: right;
+  margin-top: -15%;
+  margin-right: 30%;
+}
+
+.info5 a{
+  background-color: #307731;
+  color: white;
+  width: 9%;
+  border-radius: 10px;
+  padding: 5px 7px 5px 7px;;
+  text-decoration: none;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#parallax-window{
+  height: 400px;
+  width: 100%;
+  border: 1px solid;
+  background: url(view.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#parallax-window h1{
+  font-family: Oldtown, fantasy;
+  text-align: center;
+  color: red;
+  font-size: 3em;
+}
+
+#parallax-window h2{
+  font-family: Oldtown, fantasy;
+  text-align: center;
+  color: red;
+  font-size: 3em;
+}
+
+#contactMe{
+  border: 1px solid;
+  height: 1000px;
+  width: 100%;
+  border-bottom: none;
+}
+
+.finalline{
+  float: right;
+  border: 1px solid green;
+  width: 47%;
+  margin-top: -33px;
+}
+
+.lastline{
+  float: left;
+  border: 1px solid green;
+  width: 40%;
+  margin-top: 49px;
+}
+
+#contactMe h1{
+  font-family: Oldtown, fantasy;
+  text-align: center;
+  margin-right: 47%;
+  margin-top: 33px;
+  color: green;
+
+}
+
+#contactMe h2{
+  font-size: 2.4em;
+}
+
+#contactMe h3{
+  font-size: 2.4em;
+}
+
+#contactMe h6{
+  font-size: 2.4em;
+}
+
+#contactMe h4{
+  font-size: 2.4em;
+}
+
+#contactMe h5{
+  font-size: 2.4em;
+  margin-left: -40px;
+}
+
+#contactMe ul li{
+  font-size: 2.4em;
+  list-style-type: none;
+  margin-left: -40px;
+}
+
+.resume{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 820px;
+  width: 50%;
+  float: right;
+  border: 1px solid green;
+  margin-top: -50%;
+  margin-right: 5%;
+  background: url(resume.png) no-repeat;
+  background-size: cover;
+}
+
+/*.resume h3{
+  text-align: center;
+}*/
+
+/*.resume .download{
+  background-color: #307731;
+  color: white;
+  width: 9%;
+  border-radius: 10px;
+  padding: 5px 7px 5px 7px;
+  text-decoration: none;
+  margin-left: 37%;
+}*/
+
+/*.map{
+  width: 100%;
+  height: 400px;
+  background: url(location.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}*/
+
+footer{
+  height: 100px;
+  background-color: black;
+  margin-top: -2%;
+  color: white;
+}
+footer h4{
+
+}
+
+.video{
+  border: 1px solid;
+  height: 240px;
+  width: 320px;
+}
